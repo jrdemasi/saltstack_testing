@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  master:
+    build: "./master"
+    volumes:
+        - type: bind
+          source: ./salt
+          target: /srv/salt
+        - type: bind
+          source: ./pillar
+          target: /srv/pillar
+  minion1:
+    build: "./minion1"
+    depends_on:
+      - master
+  minion2:
+    build: "./minion2"
+    depends_on:
+      - master
