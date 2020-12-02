@@ -1,4 +1,4 @@
-#saltstack_testing
+# saltstack_testing
 
 This repository contains a simple docker stack with a salt master and two minions (minion1 and minion2).  The salt and pillar directories are bind mounted to /srv/salt and /srv/pillar.  Additionally, there is an empty code directory that also gets bind mounted so you can inject any custom scripts you may want to test.  To apply changes to all minions: `salt '*' state.apply`
 
