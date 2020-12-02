@@ -9,6 +9,9 @@ services:
         - type: bind
           source: ./pillar
           target: /srv/pillar
+        - type: bind
+          source: ./code
+          target: /code
   minion1:
     build: "./minion1"
     depends_on:
