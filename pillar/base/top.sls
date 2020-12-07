@@ -1,5 +1,5 @@
 base:
-  # Only things that literally literally get applied to every host should go here
+  # Only things that literally get applied to every host should go here
   '*':
     - users
     - groups

@@ -1,0 +1,1 @@
+%webdev ALL = (ALL) /bin/systemctl restart nginx, /bin/systemctl restart uwsgi

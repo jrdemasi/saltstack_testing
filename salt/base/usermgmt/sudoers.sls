@@ -6,3 +6,11 @@ add sre sudo group:
     - user: root
     - group: root
     - mode: 440
+add webdev sudo group:
+  file.managed:
+    - name: /etc/sudoers.d/webdev
+    - source:
+      - salt://usermgmt/files/webdev.sudoers
+    - user: root
+    - group: root
+    - mode: 440
