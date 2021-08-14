@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building containers..'
-                  sh 'docker compose version'
-                  sh 'docker compose build'
+                  sh '/usr/local/bin/docker compose version'
+                  sh '/usr/local/bin/docker compose build'
             }
         }
         stage('Test') {
